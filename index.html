@@ -9,13 +9,17 @@
   crossorigin="anonymous"></script>
   <link rel="stylesheet" href="css/styles.css">
   <script src="js/scripts.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
   <title>Pig Dice</title>
 </head>
 <body>
   <div class="container">
-    <div class="row">
+    <div class="foreground">
+    <div class="row" id="player-row">
       <div class="col-md-6">
         <h3>Player 1</h3>
+        <div class="player-data" id="player-1-toggle">
         <div>
           Your Roll:
           <span id="your-roll1"></span>
@@ -28,14 +32,16 @@
           <button class="btn btn-success" name="button" id="player-one-roll">ROLL</button>
           <button class="btn btn-primary" name="button" id="player-one-hold">HOLD</button>
         </div>
+        </div>
         <div>
           Player 1 Total:
           <span id="player-one-total"></span>
         </div>
-      </div>
+    </div>
 
       <div class="col-md-6">
         <h3>Player 2</h3>
+        <div class="player-data" id="player-2-toggle">
         <div>
           Your Roll:
           <span id="your-roll2"></span>
@@ -48,13 +54,15 @@
           <button class="btn btn-success" name="button" id="player-two-roll">ROLL</button>
           <button class="btn btn-primary" name="button" id="player-two-hold">HOLD</button>
         </div>
+        </div>
         <div>
           Player 2 Total:
           <span id="player-two-total"></span>
         </div>
       </div>
     </div>
-    <div class="row">
+  </div>
+    <div id="message-box" class="row">
       <span id="message"></span>
     </div>
     <div class="jumbotron jumbotron-fluid">

@@ -1,3 +1,35 @@
 .jumbotron {
   display: none;
 }
+
+#player-2-toggle {
+  display: none;
+}
+
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 50px;
+}
+
+#message {
+  margin-top: 100px;
+  font-size: 30px;
+  display: inline-block;
+}
+
+#message-box {
+  text-align: center;
+}
+
+#player-row {
+
+  column-height: 1000px;
+}
+
+.foreground {
+  background-color: black;
+  color: white;
+  padding: 100px;
+  border-radius: 15px;
+  margin-top: 15px;
+}
