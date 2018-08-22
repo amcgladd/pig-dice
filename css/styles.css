@@ -5,10 +5,16 @@
 #player-2-toggle {
   display: none;
 }
+.total-output {
+  font-size: 75px;
+  text-align: center;
+  margin: 20px;
+  }
 
 h3 {
   font-family: 'Montserrat', sans-serif;
   font-size: 50px;
+  text-align: center;
 }
 
 #message {
@@ -27,6 +33,11 @@ h3 {
   column-height: 1000px;
 }
 
+.dice-image {
+  text-align: center;
+  min-height: 400px;
+}
+
 .foreground {
   background-color: white;
   color: black;
@@ -36,28 +47,31 @@ h3 {
 }
 
 .player-data {
-  margin-top: 30px;
+  position: absolute;
+  margin-top: 45px;
+
 }
 
 body {
   background-color: black;
+  font-family: 'Montserrat', sans-serif;
 }
 
 img {
-  margin: 25px;
-  width: 200px;
+  margin-top: 10px;
+  height: 200px;
 }
 
 .black-box {
   background-color: black;
   color: white;
-  padding: 100px;
+  padding: 30px;
   border-radius: 15px;
   min-height: 420px;
 }
 
 #right {
-  margin-left: 25px;
+  margin-left: 15px;
 }
 #left {
   margin-right: 25px;

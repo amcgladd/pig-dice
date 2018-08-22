@@ -16,6 +16,8 @@ function Player(name) {
   this.name = name;
 }
 
+
+
 Player.prototype.updateTurn = function() {
   if(this.roll === 1) {
     this.turnTotal = 0;
