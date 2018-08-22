@@ -32,11 +32,12 @@ This is a computer generated dice game. Two players race to earn 100 points by r
 ## Setup/Installation Requirements
 
 * _To view repository, open the following in a browser:_
-* _https://github.com/amcgladd/BeepBoop.git_
+* _https://github.com/amcgladd/pig-dice.git_
+* _or_https://github.com/Eucile/pig-dice.git_
 
 ## Support and contact details
 
-Please email AJ at amcgladd@gmail.com
+Please email AJ at amcgladd@gmail.com or Krystal at kmfoster777@gmail.com
 
 ## Technologies Used
 
@@ -49,4 +50,4 @@ _jQuery_
 
 This software is licensed under the MIT license.
 
-Copyright (c) 2018 AJ Mcgladdery
+Copyright (c) 2018 AJ Mcgladdery and Krystal Foster
