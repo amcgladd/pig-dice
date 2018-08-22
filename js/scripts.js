@@ -16,7 +16,22 @@ function Player(name) {
   this.name = name;
 }
 
-
+function diceImage(roll) {
+  console.log(roll);
+  if (roll == 1) {
+    $("#dice-image").html("<img src='img/inverted-dice-1.png'>");
+  } else if (roll == 2){
+    $("#dice-image").html("<img src='img/inverted-dice-2.png'>");
+  } else if (roll == 3) {
+    $("#dice-image").html("<img src='img/inverted-dice-3.png'>");
+  } else if (roll == 4) {
+    $("#dice-image").html("<img src='img/inverted-dice-4.png'>");
+  } else if (roll == 5) {
+    $("#dice-image").html("<img src='img/inverted-dice-5.png'>");
+  } else if (roll == 6) {
+    $("#dice-image").html("<img src='img/inverted-dice-6.png'>");
+  }
+}
 
 Player.prototype.updateTurn = function() {
   if(this.roll === 1) {
@@ -24,21 +39,21 @@ Player.prototype.updateTurn = function() {
     switchPlayer();
     $("#message").text("Player " + this.name + " rolled a 1. Turn over!");
   } else if ((this.roll > 1) && (this.roll < 7)) {
-      this.turnTotal += this.roll;
-      $("#message").text("Player " + this.name + " rolled a " + this.roll + "!");
-    }
+    this.turnTotal += this.roll;
+    $("#message").text("Player " + this.name + " rolled a " + this.roll + "!");
   }
+}
 
-  Player.prototype.hold = function() {
-    this.playerTotal += this.turnTotal;
-    this.roll = 0;
-    this.turnTotal = 0;
-    switchPlayer();
-    if(this.playerTotal >= 100) {
-      $(".winner").text("Player " + this.name + " is the WINNER! CHICKEN DINNER!");
-      $(".jumbotron").show();
-    }
+Player.prototype.hold = function() {
+  this.playerTotal += this.turnTotal;
+  this.roll = 0;
+  this.turnTotal = 0;
+  switchPlayer();
+  if(this.playerTotal >= 100) {
+    $(".winner").text("Player " + this.name + " is the WINNER! CHICKEN DINNER!");
+    $(".jumbotron").show();
   }
+}
 
 // User-Interface Logic
 $(document).ready(function() {
@@ -50,6 +65,7 @@ $(document).ready(function() {
     player1.updateTurn();
     $("#your-roll1").text(player1.roll);
     $("#turn-total1").text(player1.turnTotal);
+    diceImage(player1.roll);
   });
   $("#player-one-hold").click(function(){
     player1.hold();
@@ -62,6 +78,7 @@ $(document).ready(function() {
     player2.updateTurn();
     $("#your-roll2").text(player2.roll);
     $("#turn-total2").text(player2.turnTotal);
+    diceImage(player2.roll);
   });
   $("#player-two-hold").click(function(){
     player2.hold();
