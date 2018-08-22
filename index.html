@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <script
   src="https://code.jquery.com/jquery-3.3.1.js"
   integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
@@ -18,7 +18,12 @@
     <div class="foreground">
     <div class="row" id="player-row">
       <div class="col-md-6">
+        <div class="black-box" id="left">
         <h3>Player 1</h3>
+        <div>
+          Player 1 Total:
+          <span id="player-one-total"></span>
+        </div>
         <div class="player-data" id="player-1-toggle">
         <div>
           Your Roll:
@@ -29,18 +34,20 @@
           <span id="turn-total1"></span>
         </div>
         <div id="buttons-1">
-          <button class="btn btn-success" name="button" id="player-one-roll">ROLL</button>
-          <button class="btn btn-primary" name="button" id="player-one-hold">HOLD</button>
+          <button class="btn btn-dark" name="button" id="player-one-roll">ROLL</button>
+          <button class="btn btn-dark" name="button" id="player-one-hold">HOLD</button>
         </div>
-        </div>
-        <div>
-          Player 1 Total:
-          <span id="player-one-total"></span>
         </div>
     </div>
+  </div>
 
       <div class="col-md-6">
+        <div class="black-box" id="right">
         <h3>Player 2</h3>
+        <div>
+          Player 2 Total:
+          <span id="player-two-total"></span>
+        </div>
         <div class="player-data" id="player-2-toggle">
         <div>
           Your Roll:
@@ -51,17 +58,15 @@
           <span id="turn-total2"></span>
         </div>
         <div id="buttons-2">
-          <button class="btn btn-success" name="button" id="player-two-roll">ROLL</button>
-          <button class="btn btn-primary" name="button" id="player-two-hold">HOLD</button>
+          <button class="btn btn-dark" name="button" id="player-two-roll">ROLL</button>
+          <button class="btn btn-dark" name="button" id="player-two-hold">HOLD</button>
         </div>
-        </div>
-        <div>
-          Player 2 Total:
-          <span id="player-two-total"></span>
         </div>
       </div>
     </div>
   </div>
+  </div>
+  <img src="img/inverted-dice-1.png"><img src="img/inverted-dice-2.png"><img src="img/inverted-dice-3.png">
     <div id="message-box" class="row">
       <span id="message"></span>
     </div>

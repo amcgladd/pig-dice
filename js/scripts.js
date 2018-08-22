@@ -23,7 +23,7 @@ Player.prototype.updateTurn = function() {
     $("#message").text("Player " + this.name + " rolled a 1. Turn over!");
   } else if ((this.roll > 1) && (this.roll < 7)) {
       this.turnTotal += this.roll;
-      $("#message").text("Player " + this.name + " rolled a " + this.roll + ".");
+      $("#message").text("Player " + this.name + " rolled a " + this.roll + "!");
     }
   }
 
