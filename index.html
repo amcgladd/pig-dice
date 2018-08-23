@@ -15,8 +15,25 @@
 </head>
 <body>
   <div class="container">
-    <img src="img/pig.png" id="pig">
-    <h1 class="heading">Pig Dice</h1>
+    <div class="row">
+      <div class="col-md-4 image-col" id="dice-col-1">
+      </div>
+      <div class="col-md-4">
+        <img src="img/pig.png" id="pig">
+        <h1 class="heading">Pig Dice</h1>
+        <div class="center"><span id="message">Player 1, start:</span>
+        </div>
+      </div>
+      <div class="col-md-4 image-col" id="dice-col-2">
+      </div>
+    </div>
+    <!-- <div class="results">
+      <div id="message-box" class="row">
+        <span id="message">Player 1, start:</span>
+      </div>
+    </div> -->
+
+
     <div class="foreground">
     <div class="row" id="player-row">
       <div class="col-md-6">
@@ -66,14 +83,7 @@
     </div>
   </div>
   </div>
-  <div class="results">
-    <div id="message-box" class="row">
-      <span id="message"></span>
-    </div>
-    <div id="dice-box">
-      <span id="dice-image"></span>
-    </div>
-  </div>
+
     <div class="jumbotron jumbotron-fluid">
       <h1><span class="winner"></span></h1>
     </div>
