@@ -68,11 +68,14 @@ Player.prototype.hold = function() {
   this.roll = 0;
   this.turnTotal = 0;
   switchPlayer();
-  if(this.playerTotal >= 100) {
-    $(".winner").text("Player " + this.name + " is the WINNER! CHICKEN DINNER!");
-    $(".jumbotron").show();
+  if(this.playerTotal >= 20) {
+    $(".winner-modal").text(this.name);
+    $("#myModal").modal('show');
+    }
+    // $(".winner").text("Player " + this.name + " is the WINNER! CHICKEN DINNER!");
+    // $(".jumbotron").show();
   }
-}
+
 
 // User-Interface Logic
 $(document).ready(function() {
