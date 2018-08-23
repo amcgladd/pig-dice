@@ -127,3 +127,11 @@ img {
   margin: 0 auto;
   width: 500px;
 }
+
+#myModal {
+  margin-top: 200px;
+}
+
+#animal-farm {
+  height: 700px;
+}
