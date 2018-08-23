@@ -13,8 +13,9 @@
 
 h3 {
   font-family: 'Montserrat', sans-serif;
-  font-size: 50px;
+  font-size: 40px;
   text-align: center;
+
 }
 
 #message {
@@ -52,9 +53,9 @@ h3 {
 .foreground {
   background-color: white;
   color: black;
-  padding: 100px;
+  padding: 60px;
   border-radius: 15px;
-  margin-top: 95px;
+  margin-top: 40px;
 }
 
 .player-data {
@@ -72,19 +73,34 @@ img {
   height: 300px
 }
 
+#pig {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+}
+.heading {
+  color: white;
+  text-align: center;
+  font-size: 70px;
+  font-weight: bolder;
+}
+
 .black-box {
   background-color: black;
   color: white;
   padding: 30px;
   border-radius: 15px;
-  min-height: 420px;
+  /* min-height: 420px; */
+  width: 450px;
+  height: 450px;
 }
 
 #right {
-  margin-left: 15px;
+  margin-left: 25px;
 }
 #left {
-  margin-right: 25px;
+  margin-right: 100px;
 }
 
 #message-box {
