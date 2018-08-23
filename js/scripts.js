@@ -18,6 +18,7 @@ function Player(name) {
 
 function diceImageOne(roll) {
   console.log(roll);
+  $("#dice-col-2").html("");
   if (roll == 1) {
     $("#dice-col-1").html("<img src='img/inverted-dice-1.png'>");
   } else if (roll == 2){
@@ -35,6 +36,7 @@ function diceImageOne(roll) {
 
 function diceImageTwo(roll) {
   console.log(roll);
+  $("#dice-col-1").html("");
   if (roll == 1) {
     $("#dice-col-2").html("<img src='img/inverted-dice-1.png'>");
   } else if (roll == 2){
@@ -54,7 +56,7 @@ Player.prototype.updateTurn = function() {
   if(this.roll === 1) {
     this.turnTotal = 0;
     switchPlayer();
-    $("#message").text("Player " + this.name + " rolled a 1. Turn over!");
+    $("#message").text("You rolled a 1. Switch!");
   } else if ((this.roll > 1) && (this.roll < 7)) {
     this.turnTotal += this.roll;
     $("#message").text("Player " + this.name + " rolled a " + this.roll + "!");
