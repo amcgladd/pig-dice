@@ -1,12 +1,14 @@
 # **Pig Dice**
 
+## [Live Website](https://amcgladd.github.io/pig-dice/.)
+
 #### _A game of dice, 08.22.2018_
 
 ##### By AJ Mcgladdery and Krystal Foster
 
 ## Description
 
-This is a computer generated dice game. Two players race to earn 100 points by rolling dice.
+This is a computer generated dice game. Two players race to earn 100 points by rolling dice. Rolling a 1 will switch player turns.
 
 ### Behavior Driven Development Specifications
 
@@ -33,7 +35,7 @@ This is a computer generated dice game. Two players race to earn 100 points by r
 
 * _To view repository, open the following in a browser:_
 * _https://github.com/amcgladd/pig-dice.git_
-* _or_https://github.com/Eucile/pig-dice.git_
+* or _https://github.com/Eucile/pig-dice.git_
 
 ## Support and contact details
 
