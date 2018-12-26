@@ -3,8 +3,7 @@
 
 ## [Live Website](https://amcgladd.github.io/pig-dice/)
 
-![Screenshot](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
-https://github.com/amcgladd/pig-dice/blob/master/img/pig-dice%20screenshot.png)
+![Screenshot](https://github.com/amcgladd/pig-dice/blob/master/img/pig-dice%20screenshot.png)
 
 ## Description
 
