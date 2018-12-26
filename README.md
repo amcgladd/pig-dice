@@ -2,8 +2,6 @@
 
 ## [Live Website](https://amcgladd.github.io/pig-dice/.)
 
-#### _A game of dice, 08.22.2018_
-
 ##### By AJ Mcgladdery and Krystal Foster
 
 ## Description

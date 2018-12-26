@@ -72,8 +72,6 @@ Player.prototype.hold = function() {
     $(".winner-modal").text(this.name);
     $("#myModal").modal('show');
     }
-    // $(".winner").text("Player " + this.name + " is the WINNER! CHICKEN DINNER!");
-    // $(".jumbotron").show();
   }
 
 
