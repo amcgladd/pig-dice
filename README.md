@@ -1,8 +1,9 @@
 # **Pig Dice**
+#####  By AJ Mcgladdery and Krystal Foster
 
 ## [Live Website](https://amcgladd.github.io/pig-dice/.)
 
-##### By AJ Mcgladdery and Krystal Foster
+
 
 ## Description
 
